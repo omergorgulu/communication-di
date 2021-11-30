@@ -3,6 +3,7 @@ target/
 mvnw.cmd
 .mvn
 mvnw
+github_access_token
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
