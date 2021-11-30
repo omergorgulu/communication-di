@@ -2,6 +2,7 @@ package com.aep.training.communicationdi;
 
 import com.aep.training.communicationdi.controller.ConstructorCommunicationController;
 import com.aep.training.communicationdi.controller.FieldCommunicationController;
+import com.aep.training.communicationdi.controller.GeneralPurposesController;
 import com.aep.training.communicationdi.controller.SetterCommunicationController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,6 +25,10 @@ public class CommunicationDiApplication {
         System.out.println("Setter -------------------------");
         SetterCommunicationController setterCommunicationController = (SetterCommunicationController) context.getBean("setterCommunicationController");
         setterCommunicationController.handleMessage();
+
+        System.out.println("Primary -------------------------");
+        GeneralPurposesController generalPurposesController = (GeneralPurposesController) context.getBean("generalPurposesController");
+        generalPurposesController.handleMessage();
 
 
     }
